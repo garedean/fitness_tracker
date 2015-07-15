@@ -16,6 +16,18 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+html body{
+  height:100%;
+  width: 100%;
+}
+
+
+body {
+
+  background-image: image-url('1.jpg');
+  background-size: cover;
+}
+
 
 .jumbotron{
 
@@ -48,15 +60,10 @@
 }
 
 
-body {
-
-  background-image: image-url('1.jpg');
-  background-size: cover;
-}
 
 
 table, th, td, tr {
-  width: 100%;
+  // width: 100%;
   // border: 1px solid #ddd;
 }
 
@@ -102,9 +109,11 @@ table, th, td, tr {
   color: #333;
 }
 
+.result {
+  background-color: rgba(255,255, 255,.2);
+  border-radius: 5px;
+}
 
-@media screen and (max-width: 1488px){
-.result{
-  margin-left:0%;
-  }
+.panel {
+  box-shadow: 20px 20px 20px #373535;
 }
