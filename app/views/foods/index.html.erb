@@ -3,7 +3,6 @@
  <%#end%> -->
  <!-- possibly use it to dynamically change background image -->
 
-<div class="homepage">
   <div class="container">
     <div class= "jumbotron">
       <h1>Tracker</h1>
@@ -26,30 +25,12 @@
       </div>
     </div>
 
-
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2 panel introduction result">
-        <h2> Here are the calories for your list of foods </h2>
+        <div id="foods-wrapper">
 
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <!-- Helper method 'sortable' found in helpers/application_helper -->
-              <th class="name-column"><%= sortable "Name" %></th>
-              <th class="calories-column"><%= sortable "Calories" %></th>
-            </tr>
-          </thead>
-          <% for food in @foods %>
-            <tr>
-              <td><%= food.name %></td>
-              <td><%= food.calories %></td>
-            </tr>
-          <% end %>
-
-
-
-        </table>
-        <%= will_paginate @foods %>
+          <%= render "foods_table" %>
+        </div>
       </div>
     </div>
   </div>
