@@ -9,32 +9,69 @@
       <h1>Tracker</h1>
     </div>
 
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2 panel introduction intro">
+        <h2>Welcome to A Simple Fitness Tracker.</h2>
+        <h3> When you sign up you can track your daily intake <br/>  of food as well as how much you are exercising.</h3>
+        <%= link_to "Sign up", new_user_registration_path, class: "btn btn-lg btn-primary"  %>
+      </div>
+
+    </div>
 
     <div class="row">
-      <div class="panel">
-        <% @foods.each do |food| %>
-          <p> <%= food.name %> | <%=food.calorie%>
-        <%end%>
+      <div class="col-sm-8 col-sm-offset-2 panel introduction search">
+        <h2>To Get You Started</h2>
+        <h3> Check out the Calorie Count of the Foods You Are Eating</h3>
+        <%= link_to "Search Bar", new_user_registration_path, class: "btn btn-lg btn-success"  %>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-sm-7 col-sm-offset-2 result">
+          <h3> Here are the calories for your list of foods </h3>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Food</th>
+              <th>Calories</th>
+            </tr>
+          </thead>
+          <% for food in @foods %>
+            <tr>
+              <td><%= food.name %></td>
+              <td><%=food.calories%></td>
+
+            </tr>
+          <% end %>
+
+        </table>
       </div>
     </div>
   </div>
 
-  <h2>Foods Consumed</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <h2>Foods Consumed</h2>
 
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Food</th>
-        <th>Calories</th>
-      </tr>
-    </thead>
-    <% for food in @foods %>
-      <tr>
-        <td><%= food.name %></td>
-        <td></td>
-      </tr>
-    <% end %>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Food</th>
+                <th>Calories</th>
+              </tr>
+            </thead>
+            <% for food in @foods %>
+              <tr>
+                <td><%= food.name %></td>
+                <td><%=food.calories%></td>
 
-  </table>
+              </tr>
+            <% end %>
 
+          </table>
+        </div>
+      </div>
+    </div>
 </div>

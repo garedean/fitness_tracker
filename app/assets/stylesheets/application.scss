@@ -23,18 +23,88 @@
  background-color: rgba(255,255,255,0);
  letter-spacing: 13px;
 }
+
+
+
 .jumbotron h1{
    color: #BFBBB4;
    text-shadow: .12em .075em 2px rgba(0,0,0,.51);
    font-size: 7em;
 }
 
+@media screen and (max-width: 663px){
+  .jumbotron h1{
+    font-size: 3em;
+  }
+
+  .introduction h2{
+    font-size:1.5em;
+    padding-top:10px;
+  }
+  .introduction h3{
+    font-size: 1.25em;
+    padding-bottom: 30px;
+  }
+}
+
 
 body {
 
   background-image: image-url('1.jpg');
+  background-size: cover;
 }
+
+
 table, th, td, tr {
   width: 100%;
   // border: 1px solid #ddd;
+}
+
+
+.introduction {
+  background-color: rgba(215,224, 188,.1);
+  text-align: center;
+  text-shadow: .05em .05em 1px rgba(0,0,0,.51);
+}
+.introduction h2{
+
+  padding-top:10px;
+}
+.introduction h3{
+  padding-bottom: 30px;
+}
+.introduction a{
+  margin-bottom: 30px;
+}
+.search{
+  background-color: rgba(13,255, 245,.08);
+}
+
+.intro .btn{
+  width: 65%;
+}
+
+
+// navbar styling
+.navbar{
+  background-color: rgba(255,255, 255,.2);
+  border: 0px;
+
+}
+
+.navbar-default .navbar-brand{
+  color: #000;
+  font-family: san-serif, cursive;
+  font-size: 30px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #333;
+}
+
+
+@media screen and (max-width: 1488px){
+.result{
+  margin-left:0%;
+  }
 }
