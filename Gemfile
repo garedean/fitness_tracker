@@ -2,16 +2,17 @@ source 'https://rubygems.org'
 
 gem 'rails'
 gem 'pg'
-gem 'bootstrap-sass', '~> 3.3.5.1'
-gem 'sass-rails'
 gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'pry', :require => 'pry'
 gem 'bootstrap_form'
 gem 'devise', '~> 3.5.1'
-gem "recaptcha", :require => "recaptcha/rails"
+gem 'bootstrap-sass', '~> 3.3.5'
+gem 'sass-rails', '>= 3.2'
+gem "factory_girl_rails"
+gem "rails_12factor", group: :production #heroku deployment
+gem "pry"
 
 group :development do
   gem 'byebug'
