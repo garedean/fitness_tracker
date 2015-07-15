@@ -5,16 +5,16 @@
   <table class="table table-striped">
     <thead>
       <tr>
-        <th>Food</th>
-        <th>Calories</th>
+        <!-- Helper method 'sortable' found in helpers/application_helper -->
+        <th class="name-column"><%= sortable "name" %></th>
+        <th class="calories-column"><%= sortable "calories" %></th>
       </tr>
     </thead>
     <% for food in @foods %>
       <tr>
         <td><%= food.name %></td>
-        <td></td>
+        <td><%= food.calories %></td>
       </tr>
     <% end %>
-
   </table>
 </div>
