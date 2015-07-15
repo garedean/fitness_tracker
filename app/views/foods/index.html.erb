@@ -9,6 +9,7 @@
       <h1>Tracker</h1>
     </div>
 
+
     <div class="row">
       <div class="panel">
         <% @foods.each do |food| %>
@@ -17,4 +18,23 @@
       </div>
     </div>
   </div>
+
+  <h2>Foods Consumed</h2>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Food</th>
+        <th>Calories</th>
+      </tr>
+    </thead>
+    <% for food in @foods %>
+      <tr>
+        <td><%= food.name %></td>
+        <td></td>
+      </tr>
+    <% end %>
+
+  </table>
+
 </div>
