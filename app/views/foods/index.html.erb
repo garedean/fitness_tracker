@@ -1,0 +1,20 @@
+<div class="homepage">
+
+  <h2>Foods Consumed</h2>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Food</th>
+        <th>Calories</th>
+      </tr>
+    </thead>
+    <% for food in @foods %>
+      <tr>
+        <td><%= food.name %></td>
+        <td></td>
+      </tr>
+    <% end %>
+
+  </table>
+</div>

@@ -10,7 +10,7 @@ gem 'bootstrap_form'
 gem 'devise', '~> 3.5.1'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'sass-rails', '>= 3.2'
-gem "factory_girl_rails"
+
 gem "rails_12factor", group: :production #heroku deployment
 gem "pry"
 
