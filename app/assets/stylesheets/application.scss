@@ -17,12 +17,21 @@
  @import "bootstrap";
 
 
- .jumbotron{
-   text-align: center;
- }
+.jumbotron{
+
+ text-align: center;
+ background-color: rgba(255,255,255,0);
+ letter-spacing: 13px;
+}
+.jumbotron h1{
+   color: #BFBBB4;
+   text-shadow: .12em .075em 2px rgba(0,0,0,.51);
+   font-size: 7em;
+}
 
 
-body{
 
-  background-image: url('../images/background.jpg');
+body {
+
+  background-image: image-url('1.jpg');
 }

@@ -1,3 +1,20 @@
-<div class="homepage">
+ <!-- <%# content_for :custom_styles do %>
+   body{background: url('1.jpg');}
+ <%#end%> -->
+ <!-- possibly use it to dynamically change background image -->
 
+<div class="homepage">
+  <div class="container">
+    <div class= "jumbotron">
+      <h1>Tracker</h1>
+    </div>
+
+    <div class="row">
+      <div class="panel">
+        <% @foods.each do |food| %>
+          <p> <%= food.name %> | <%=food.calorie%>
+        <%end%>
+      </div>
+    </div>
+  </div>
 </div>
