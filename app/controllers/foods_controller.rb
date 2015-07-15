@@ -2,7 +2,7 @@ class FoodsController < ApplicationController
   helper_method :sort_column, :sort_direction
 
   def index
-    @foods = Food.order(sort_column + " " + sort_direction)
+    @foods = Food.order(sort_column + " " + sort_direction).paginate(per_page: 10, page: params[:page])
   end
 
   private
