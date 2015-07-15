@@ -26,30 +26,15 @@
       </div>
     </div>
 
-
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2 panel result">
-        <h2> Here are the calories for your list of foods </h2>
 
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <!-- Helper method 'sortable' found in helpers/application_helper -->
-              <th class="name-column"><%= sortable "Name" %></th>
-              <th class="calories-column"><%= sortable "Calories" %></th>
-            </tr>
-          </thead>
-          <% for food in @foods %>
-            <tr>
-              <td><%= food.name %></td>
-              <td><%= food.calories %></td>
-            </tr>
-          <% end %>
+        <div id="foods-wrapper">
 
+        <%= render "foods_table" %>
 
+        </div>
 
-        </table>
-        <%= will_paginate @foods %>
       </div>
     </div>
   </div>
