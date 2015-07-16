@@ -19,3 +19,13 @@
 </table>
 
 <%= will_paginate @foods, remote: true %>
+
+<!-- Use AJAX for pagination. This runs the below script
+every time this partial is rendered; it adds a 'remote' attribute
+with a value of 'true' on the will_paginate liks, necessary because you cannot easily assign 'remote="true"' to will_paginate links unless through JavaScript.
+http://codebeerstartups.com/2012/11/pagination-with-ajax-using-will-paginate-in-ruby-on-rails/ -->
+<script>
+  $(function(){
+     $('.pagination a').attr('data-remote', 'true')
+  });
+</script>
