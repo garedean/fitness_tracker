@@ -54,6 +54,8 @@ body {
 
   text-shadow: .07em .07em 2px rgba(0,0,0,.51);
 }
+
+
 .signup {
   margin-left:12%;
   margin-top: 30px;
@@ -63,6 +65,9 @@ body {
   color:white;
   text-shadow: .1em .1em 1px rgba(0,0,0,.51);
 }
+
+
+
 .signup h2{
   font-size:25px;
   text-align: center;
@@ -78,6 +83,7 @@ body {
   margin-top:30px;
   margin-bottom: 30px;
 }
+//fixs the picture inside a div and the text scrolls through
 
 .intro{
   margin-top: 50px;
@@ -87,6 +93,7 @@ body {
   background-position:bottom;
   background-attachment:fixed;
 }
+//
 .intro .btn{
   width: 65%;
   box-shadow: 10px 10px 10px #373535;
@@ -166,4 +173,8 @@ body {
 .actions {
   padding-top: 15px;
   padding-bottom:35px;
+}
+
+.signup-user{
+  color:#000;
 }
