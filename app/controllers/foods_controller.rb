@@ -12,6 +12,8 @@ class FoodsController < ApplicationController
 
   private
 
+
+  #sort functions
   def food_params
     params.permit(:sort, :direction)
   end
