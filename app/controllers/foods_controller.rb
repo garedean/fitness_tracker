@@ -8,19 +8,27 @@ class FoodsController < ApplicationController
     @foods = Food.order(sort_column + " " + sort_direction).select(:name, :calories).uniq.paginate(per_page: 10, page: params[:page])
 
     respond_to do |format|
-
-      format.html {render "index" }
+      format.html { render "index" }
       format.js
     end
   end
 
   def create
     @user = current_user
-    @food = Food.new(name: food_params[:name], calories: food_params[:calories])
-    @user.foods.push(@food)
+    @new_food = Food.new(name: food_params[:name], calories: food_params[:calories])
 
-    if @food.save
-      redirect_to :back
+    @user.foods.push(@new_food)
+
+    @foods = Food.order(sort_column + " " + sort_direction).select(:name, :calories).uniq.paginate(per_page: 10, page: params[:page])
+
+    respond_to do |format|
+      if @new_food.save
+        format.html { redirect_to :back }
+        format.js { render "index" }
+      else
+        format.html { render "index" }
+        format.js
+      end
     end
   end
 

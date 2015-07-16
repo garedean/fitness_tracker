@@ -8,11 +8,13 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-8 col-sm-offset-2">
-      <%= simple_form_for [@user, @new_food] do |f| %>
-        <%= f.input :name %>
-        <%= f.input :calories %>
-        <%= f.button :submit %>
-      <% end %>
+
+      <h2>Add food and calories</h2>
+
+      <div id="new-food-wrapper">
+        <%= render "form" %>
+      </div>
+
       <div id="foods-wrapper">
         <%= render "foods_table" %>
       </div>
