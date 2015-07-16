@@ -4,9 +4,11 @@
   <div class="row">
     <div class="col-sm-8 col-sm-offset-2">
 
-      <%= line_chart @foods.group_by_day(:created_at, format: "%B %d, %Y").count, discrete: true %>
+      <h3>Calories over time</h3>
 
-      <h2>Add food and calories</h2>
+      <%= line_chart Food.group(:created_at).sum(:calories) %>
+
+      <h3>Add food and calories</h3>
 
       <div id="new-food-wrapper">
         <%= render "form" %>
