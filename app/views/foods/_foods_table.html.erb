@@ -8,6 +8,7 @@
       <th class="calories-column"><%= sortable "Calories" %></th>
     </tr>
   </thead>
+
   <% for food in @foods %>
     <tr>
       <td><%= food.name %></td>
@@ -17,4 +18,4 @@
 
 </table>
 
-<%= will_paginate @foods %>
+<%= will_paginate @foods, remote: true %>

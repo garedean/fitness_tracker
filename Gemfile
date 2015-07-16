@@ -11,7 +11,7 @@ gem 'devise', '~> 3.5.1'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'sass-rails', '>= 3.2'
 gem 'will_paginate', '~> 3.0.7'
-
+gem 'ajax_pagination'
 gem "rails_12factor", group: :production #heroku deployment
 gem "pry"
 
