@@ -179,6 +179,9 @@ GEM
       tilt (~> 1.1)
     shoulda-matchers (2.8.0)
       activesupport (>= 3.0.0)
+    simple_form (3.1.0)
+      actionpack (~> 4.0)
+      activemodel (~> 4.0)
     simplecov (0.10.0)
       docile (~> 1.1.0)
       json (~> 1.8)
@@ -235,9 +238,13 @@ DEPENDENCIES
   rspec-rails
   sass-rails (>= 3.2)
   shoulda-matchers
+  simple_form
   simplecov
   spring
   turbolinks
   uglifier
   web-console
   will_paginate (~> 3.0.7)
+
+BUNDLED WITH
+   1.10.5

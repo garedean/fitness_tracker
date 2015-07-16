@@ -8,9 +8,10 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-8 col-sm-offset-2">
-      <%= bootstrap_form_for [@user, @new_food] do |f| %>
-        <%= f.text_field :calories %>
-        <%= f.primary "Log food" %>
+      <%= simple_form_for [@user, @new_food] do |f| %>
+        <%= f.input :name %>
+        <%= f.input :calories %>
+        <%= f.button :submit %>
       <% end %>
       <div id="foods-wrapper">
         <%= render "foods_table" %>

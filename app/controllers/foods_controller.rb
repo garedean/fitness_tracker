@@ -14,18 +14,28 @@ class FoodsController < ApplicationController
     end
   end
 
+  def create
+    @user = current_user
+    @food = Food.new(name: food_params[:name], calories: food_params[:calories])
+    @user.foods.push(@food)
+
+    if @food.save
+      redirect_to :back
+    end
+  end
+
   private
 
   #sort functions
   def food_params
-    params.permit(:sort, :direction)
+    params.require(:food).permit(:sort, :direction, :name, :calories)
   end
 
   def sort_column
-    food_params[:sort] || "name"
+    params[:sort] || "name"
   end
 
   def sort_direction
-    food_params[:direction] || "asc"
+    params[:direction] || "asc"
   end
 end
