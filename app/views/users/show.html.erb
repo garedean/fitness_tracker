@@ -11,9 +11,9 @@
       <%= bootstrap_form_for [@user, @new_food] do |f| %>
         <%= f.text_field :calories %>
         <%= f.submit %>
-
-
       <% end %>
+
+      <%= render "foods_table" %>
     </div>
   </div>
 </div>

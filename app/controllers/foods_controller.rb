@@ -2,6 +2,9 @@ class FoodsController < ApplicationController
   helper_method :sort_column, :sort_direction
 
   def index
+    @user = User.find(current_user.id)
+    @new_food = Food.new
+
     @foods = Food.order(sort_column + " " + sort_direction).select(:name, :calories).uniq.paginate(per_page: 10, page: params[:page])
 
     respond_to do |format|
@@ -12,7 +15,6 @@ class FoodsController < ApplicationController
   end
 
   private
-
 
   #sort functions
   def food_params
@@ -25,6 +27,5 @@ class FoodsController < ApplicationController
 
   def sort_direction
     food_params[:direction] || "asc"
-
   end
 end
