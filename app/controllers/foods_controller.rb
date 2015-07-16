@@ -2,10 +2,11 @@ class FoodsController < ApplicationController
   helper_method :sort_column, :sort_direction
 
   def index
+
+    @foods = Food.order(sort_column + " " + sort_direction).select(:name, :calories).distinct.paginate(per_page: 10, page: params[:page])
     @user = User.find(current_user.id)
     @new_food = Food.new
 
-    @foods = Food.order(sort_column + " " + sort_direction).select(:name, :calories).uniq.paginate(per_page: 10, page: params[:page])
 
     respond_to do |format|
       format.html { render "index" }
