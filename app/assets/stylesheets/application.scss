@@ -48,22 +48,29 @@ body {
    font-family: 'Lobster Two', cursive;
 }
 
-table, th, td, tr {
-  // width: 100%;
-  // border: 1px solid #ddd;
-}
-
 
 .introduction {
 
 
-  text-shadow: .05em .05em 1px rgba(0,0,0,.51);
+  text-shadow: .07em .07em 2px rgba(0,0,0,.51);
 }
-.introduction h2{
+.signup {
+  margin-left:12%;
+  margin-top: 30px;
+  padding-top:1%;
+  padding-left:2%;
+  font-size: 15px;
+  color:white;
+  text-shadow: .1em .1em 1px rgba(0,0,0,.51);
+}
+.signup h2{
+  font-size:25px;
   text-align: center;
   padding-top:10px;
+
 }
-.introduction h3{
+.signup h3{
+  font-size: 20px;
   text-align: center;
   padding-bottom: 30px;
 }
@@ -73,6 +80,7 @@ table, th, td, tr {
 }
 
 .intro{
+  margin-top: 50px;
   text-align: center;
   background-image: image-url('2.jpg');
   background-repeat: no-repeat;
@@ -89,12 +97,22 @@ table, th, td, tr {
   margin-top: 30px;
 
 }
+
+.search h2, .result h2{
+  text-align: center;
+  padding-top:10px;
+}
+
+.search h3, {
+  text-align: center;
+  padding-bottom: 30px;
+}
 .search .btn{
   box-shadow: 10px 10px 10px #373535;
 }
 
 .result {
-  display: none;
+
   margin-top:15px;
   background-color: rgba(255,255, 255,.9);
   border-radius: 5px;
@@ -123,7 +141,7 @@ table, th, td, tr {
 }
 // navbar styling
 .navbar{
-  background-color: rgba(188,189,183,.8);
+  background-color: rgba(175, 194, 213, 1);
   border: 0px;
 
 }
@@ -140,16 +158,10 @@ table, th, td, tr {
 
 
 .panel {
+
   box-shadow: 20px 20px 20px #373535;
 }
 
-.signup {
-  padding-top:1%;
-  padding-left:2%;
-  background-color:white;
-  width:250px;
-  box-shadow: 20px 20px 20px #373535;
-}
 
 .actions {
   padding-top: 15px;

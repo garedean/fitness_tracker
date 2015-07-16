@@ -4,24 +4,25 @@
  <!-- possibly use it to dynamically change background image -->
 
   <div class="intro">
-    <div class= "jumbotron ">
-      <h1>FIT JOURNAL</h1>
-    </div>
 
     <div class="row">
-      <div class="col-sm-8 col-sm-offset-2 panel introduction" style="text-align:center">
-        <h2>Welcome to A Simple Fitness Tracker.</h2>
-        <h3> When you sign up you can track your daily intake <br/>  of food as well as how much you are exercising.</h3>
-        <%= link_to "Sign up", new_user_registration_path, class: "btn btn-lg btn-primary"  %>
+      <div class= "col-sm-5 jumbotron ">
+        <h1>FIT JOURNAL</h1>
       </div>
-
+        <div class="col-sm-5 col-sm-offset-1  introduction signup" style="text-align:center">
+          <h2>Welcome to A Simple Fitness Tracker.</h2>
+          <h3> When you sign up you can track your daily intake <br/>  of food as well as how much you are exercising.</h3>
+          <%= link_to "Sign up", new_user_registration_path, class: "btn btn-lg btn-primary"  %>
+          <h3> Returning fitness warriors <%=link_to "Log-in", user_session_path %>
+        </div>
     </div>
+
   </div>
   <div class="container">
     <div class="row">
       <div class="col-sm-7  introduction search">
         <h2>To Get You Started: </h2>
-        <h3> Check out the Calorie Count of the Foods You Are Eating</h3>
+        <h3> Check out the Calorie Count of the Foods You Are Eating Right Now!</h3>
       </div>
         <div class="col-sm-5  introduction search">
 
