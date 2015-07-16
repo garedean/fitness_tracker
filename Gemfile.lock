@@ -20,6 +20,8 @@ GEM
       erubis (~> 2.7.0)
       rails-dom-testing (~> 1.0, >= 1.0.5)
       rails-html-sanitizer (~> 1.0, >= 1.0.1)
+    active_median (0.1.2)
+      activerecord
     activejob (4.2.2)
       activesupport (= 4.2.2)
       globalid (>= 0.3.0)
@@ -61,6 +63,7 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    chartkick (1.2.5)
     coderay (1.1.0)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
@@ -89,6 +92,8 @@ GEM
       railties (>= 3.0.0)
     globalid (0.3.5)
       activesupport (>= 4.1.0)
+    groupdate (2.1.1)
+      activerecord (>= 3.0.0)
     i18n (0.7.0)
     jquery-historyjs (0.3.0)
       railties (>= 3.0)
@@ -220,14 +225,17 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_median (~> 0.1.0)
   ajax_pagination
   bootstrap-sass (~> 3.3.5)
   bootstrap_form
   byebug
   capybara (~> 2.4.4)
+  chartkick (~> 1.2.4)
   coffee-rails
   devise (~> 3.5.1)
   factory_girl_rails
+  groupdate (~> 2.1.1)
   jquery-rails
   launchy
   pg
@@ -245,6 +253,3 @@ DEPENDENCIES
   uglifier
   web-console
   will_paginate (~> 3.0.7)
-
-BUNDLED WITH
-   1.10.5

@@ -7,7 +7,6 @@ class FoodsController < ApplicationController
     @user = User.find(current_user.id)
     @new_food = Food.new
 
-
     respond_to do |format|
       format.html { render "index" }
       format.js
@@ -25,10 +24,10 @@ class FoodsController < ApplicationController
     respond_to do |format|
       if @new_food.save
         format.html { redirect_to :back }
-        format.js { render "index" }
+        format.js
       else
         format.html { render "index" }
-        format.js
+        format.js { render "index" }
       end
     end
   end
