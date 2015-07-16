@@ -1,7 +1,17 @@
+<!-- temptorary styling until body gets padding-top -->
+<style>
+  body {
+    padding-top: 100px;
+  }
+</style>
+
 <div class="container">
   <div class="row">
     <div class="col-sm-8 col-sm-offset-2">
-      <%= @user.email %>
+      <%= bootstrap_form_for [@user, @new_food] do |f| %>
+        <%= f.text_field :calories %>
+        <%= f.submit %>
+      <% end %>
     </div>
   </div>
 </div>
