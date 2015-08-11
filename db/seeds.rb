@@ -1,125 +1,125 @@
 foods = {
-    "Peas": {
+    "Peas" => {
       calories: 100,
       created_at: DateTime.parse("2015-07-01")
     },
-    "Pancakes": {
+    "Pancakes" => {
       calories: 200,
       created_at: DateTime.parse("2015-07-01")
     },
-    "Banana": {
+    "Banana" => {
       calories: 150,
       created_at: DateTime.parse("2015-07-02")
     },
-    "Avocado Sandwich": {
+    "Avocado Sandwich" => {
       calories: 450,
       created_at: DateTime.parse("2015-07-03")
     },
-    "Oatmeal": {
+    "Oatmeal" => {
       calories: 250,
       created_at: DateTime.parse("2015-07-04")
     },
-    "French Fries": {
+    "French Fries" => {
       calories: 450,
       created_at: DateTime.parse("2015-07-05")
     },
-    "Tiger Shrimp": {
+    "Tiger Shrimp" => {
       calories: 450,
       created_at: DateTime.parse("2015-07-06")
     },
-    "Doritos": {
+    "Doritos" => {
       calories: 100,
       created_at: DateTime.parse("2015-07-07")
     },
-    "Stick of Gum": {
+    "Stick of Gum" => {
       calories: 10,
       created_at: DateTime.parse("2015-07-08")
     },
-    "Taco Salad": {
+    "Taco Salad" => {
       calories: 600,
       created_at: DateTime.parse("2015-07-09")
     },
-    "Chipotle Burrito": {
+    "Chipotle Burrito" => {
       calories: 1000,
       created_at: DateTime.parse("2015-07-10")
     },
-    "Widmer Beer": {
+    "Widmer Beer" => {
       calories: 150,
       created_at: DateTime.parse("2015-07-11")
     },
-    "Red Wine": {
+    "Red Wine" => {
       calories: 175,
       created_at: DateTime.parse("2015-07-12")
     },
-    "Nachos": {
+    "Nachos" => {
       calories: 450,
       created_at: DateTime.parse("2015-07-13")
     },
-    "Celery": {
+    "Celery" => {
       calories: 50,
       created_at: DateTime.parse("2015-07-14")
     },
-    "Green Apple": {
+    "Green Apple" => {
       calories: 100,
       created_at: DateTime.parse("2015-07-15")
     },
-    "Spinach": {
+    "Spinach" => {
       calories: 80,
       created_at: DateTime.parse("2015-07-16")
     },
-    "Rice": {
+    "Rice" => {
       calories: 175,
       created_at: DateTime.parse("2015-07-17")
     },
-    "Martini": {
+    "Martini" => {
       calories: 140,
       created_at: DateTime.parse("2015-07-18")
     },
-    "Ice Cream": {
+    "Ice Cream" => {
       calories: 250,
       created_at: DateTime.parse("2015-07-19")
     },
-    "Veggie Stir Fry": {
+    "Veggie Stir Fry" => {
       calories: 350,
       created_at: DateTime.parse("2015-07-20")
     },
-    "Tofu": {
+    "Tofu" => {
       calories: 250,
       created_at: DateTime.parse("2015-07-21")
     },
-    "Heirloom Tomatoes": {
+    "Heirloom Tomatoes" => {
       calories: 100,
       created_at: DateTime.parse("2015-07-22")
     },
-    "Dinner Roll": {
+    "Dinner Roll" => {
       calories: 100,
       created_at: DateTime.parse("2015-07-23")
     },
-    "Mashed Potatoes": {
+    "Mashed Potatoes" => {
       calories: 350,
       created_at: DateTime.parse("2015-07-24")
     },
-    "Coconut Pie": {
+    "Coconut Pie" => {
       calories: 50,
       created_at: DateTime.parse("2015-07-25")
     },
-    "Denny's Dinner": {
+    "Denny's Dinner" => {
       calories: 1200,
       created_at: DateTime.parse("2015-07-26")
     },
-    "Quasadilla": {
+    "Quasadilla" => {
       calories: 700,
       created_at: DateTime.parse("2015-07-27")
     },
-    "Grilled Salmon": {
+    "Grilled Salmon" => {
       calories: 800,
       created_at: DateTime.parse("2015-07-28")
     },
-    "Whiskey": {
+    "Whiskey" => {
       calories: 200,
       created_at: DateTime.parse("2015-07-29")
     },
-    "Black Beans": {
+    "Black Beans" => {
       calories: 100,
       created_at: DateTime.parse("2015-07-30")
     }
